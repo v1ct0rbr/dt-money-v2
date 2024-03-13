@@ -1,0 +1,404 @@
+{
+    "transactions": [
+        {
+            "id": 1,
+            "createdAt": "2019-01-01T15:30:005Z",
+            "amount": 100,
+            "type": "withdraw",
+            "category": "Deposit",
+            "title": "Initial deposit"
+        },
+        {
+            "id": 2,
+            "createdAt": "2019-01-02T15:30:005Z",
+            "amount": 50,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "ATM withdrawal"
+        },
+        {
+            "id": 3,
+            "createdAt": "2019-01-03T15:30:005Z",
+            "amount": 25,
+            "type": "deposit",
+            "category": "Investiment",
+            "title": "FIIS"
+        },
+        {
+            "id": 4,
+            "createdAt": "2019-01-04T15:30:005Z",
+            "amount": 75,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Groceries"
+        },
+        {
+            "id": 5,
+            "createdAt": "2019-01-05T15:30:005Z",
+            "amount": 200,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Bonus"
+        },
+        {
+            "id": 6,
+            "createdAt": "2019-01-06T15:30:005Z",
+            "amount": 150,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Dinner"
+        },
+        {
+            "id": 7,
+            "createdAt": "2019-01-07T15:30:005Z",
+            "amount": 300,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Stocks"
+        },
+        {
+            "id": 8,
+            "createdAt": "2019-01-08T15:30:005Z",
+            "amount": 50,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Coffee"
+        },
+        {
+            "id": 9,
+            "createdAt": "2019-01-09T15:30:005Z",
+            "amount": 100,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Overtime"
+        },
+        {
+            "id": 10,
+            "createdAt": "2019-01-10T15:30:005Z",
+            "amount": 20,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Snacks"
+        },
+        {
+            "id": 11,
+            "createdAt": "2019-01-11T15:30:005Z",
+            "amount": 150,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Cryptocurrency"
+        },
+        {
+            "id": 12,
+            "createdAt": "2019-01-12T15:30:005Z",
+            "amount": 80,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Gas"
+        },
+        {
+            "id": 13,
+            "createdAt": "2019-01-13T15:30:005Z",
+            "amount": 200,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Bonus"
+        },
+        {
+            "id": 14,
+            "createdAt": "2019-01-14T15:30:005Z",
+            "amount": 100,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Movies"
+        },
+        {
+            "id": 15,
+            "createdAt": "2019-01-15T15:30:005Z",
+            "amount": 300,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Bonds"
+        },
+        {
+            "id": 16,
+            "createdAt": "2019-01-16T15:30:005Z",
+            "amount": 50,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Lunch"
+        },
+        {
+            "id": 17,
+            "createdAt": "2019-01-17T15:30:005Z",
+            "amount": 100,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Bonus"
+        },
+        {
+            "id": 18,
+            "createdAt": "2019-01-18T15:30:005Z",
+            "amount": 30,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Parking"
+        },
+        {
+            "id": 19,
+            "createdAt": "2019-01-19T15:30:005Z",
+            "amount": 150,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "ETFs"
+        },
+        {
+            "id": 20,
+            "createdAt": "2019-01-20T15:30:005Z",
+            "amount": 50,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Coffee"
+        },
+        {
+            "id": 21,
+            "createdAt": "2019-01-21T15:30:005Z",
+            "amount": 100,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Overtime"
+        },
+        {
+            "id": 22,
+            "createdAt": "2019-01-22T15:30:005Z",
+            "amount": 20,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Snacks"
+        },
+        {
+            "id": 23,
+            "createdAt": "2019-01-23T15:30:005Z",
+            "amount": 150,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Stocks"
+        },
+        {
+            "id": 24,
+            "createdAt": "2019-01-24T15:30:005Z",
+            "amount": 80,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Gas"
+        },
+        {
+            "id": 25,
+            "createdAt": "2019-01-25T15:30:005Z",
+            "amount": 200,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Bonus"
+        },
+        {
+            "id": 26,
+            "createdAt": "2019-01-26T15:30:005Z",
+            "amount": 100,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Movies"
+        },
+        {
+            "id": 27,
+            "createdAt": "2019-01-27T15:30:005Z",
+            "amount": 300,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Bonds"
+        },
+        {
+            "id": 28,
+            "createdAt": "2019-01-28T15:30:005Z",
+            "amount": 50,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Lunch"
+        },
+        {
+            "id": 29,
+            "createdAt": "2019-01-29T15:30:005Z",
+            "amount": 100,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Bonus"
+        },
+        {
+            "id": 30,
+            "createdAt": "2019-01-30T15:30:005Z",
+            "amount": 30,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Parking"
+        },
+        {
+            "id": 31,
+            "createdAt": "2019-01-31T15:30:005Z",
+            "amount": 150,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "ETFs"
+        },
+        {
+            "id": 32,
+            "createdAt": "2019-02-01T15:30:005Z",
+            "amount": 50,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Coffee"
+        },
+        {
+            "id": 33,
+            "createdAt": "2019-02-02T15:30:005Z",
+            "amount": 100,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Overtime"
+        },
+        {
+            "id": 34,
+            "createdAt": "2019-02-03T15:30:005Z",
+            "amount": 20,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Snacks"
+        },
+        {
+            "id": 35,
+            "createdAt": "2019-02-04T15:30:005Z",
+            "amount": 150,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Stocks"
+        },
+        {
+            "id": 36,
+            "createdAt": "2019-02-05T15:30:005Z",
+            "amount": 80,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Gas"
+        },
+        {
+            "id": 37,
+            "createdAt": "2019-02-06T15:30:005Z",
+            "amount": 200,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Bonus"
+        },
+        {
+            "id": 38,
+            "createdAt": "2019-02-07T15:30:005Z",
+            "amount": 100,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Movies"
+        },
+        {
+            "id": 39,
+            "createdAt": "2019-02-08T15:30:005Z",
+            "amount": 300,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Bonds"
+        },
+        {
+            "id": 40,
+            "createdAt": "2019-02-09T15:30:005Z",
+            "amount": 50,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Lunch"
+        },
+        {
+            "id": 41,
+            "createdAt": "2019-02-10T15:30:005Z",
+            "amount": 100,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Bonus"
+        },
+        {
+            "id": 42,
+            "createdAt": "2019-02-11T15:30:005Z",
+            "amount": 30,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Parking"
+        },
+        {
+            "id": 43,
+            "createdAt": "2019-02-12T15:30:005Z",
+            "amount": 150,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "ETFs"
+        },
+        {
+            "id": 44,
+            "createdAt": "2019-02-13T15:30:005Z",
+            "amount": 50,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Coffee"
+        },
+        {
+            "id": 45,
+            "createdAt": "2019-02-14T15:30:005Z",
+            "amount": 100,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Overtime"
+        },
+        {
+            "id": 46,
+            "createdAt": "2019-02-15T15:30:005Z",
+            "amount": 20,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Snacks"
+        },
+        {
+            "id": 47,
+            "createdAt": "2019-02-16T15:30:005Z",
+            "amount": 150,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Stocks"
+        },
+        {
+            "id": 48,
+            "createdAt": "2019-02-17T15:30:005Z",
+            "amount": 80,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Gas"
+        },
+        {
+            "id": 49,
+            "createdAt": "2019-02-18T15:30:005Z",
+            "amount": 200,
+            "type": "deposit",
+            "category": "Salary",
+            "title": "Bonus"
+        },
+        {
+            "id": 50,
+            "createdAt": "2019-02-19T15:30:005Z",
+            "amount": 100,
+            "type": "withdraw",
+            "category": "Expense",
+            "title": "Movies"
+        }
+    ]
+}

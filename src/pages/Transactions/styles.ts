@@ -6,6 +6,12 @@ export const TransactionsContainer = styled.main`
     margin: 0 auto;
     padding: 0 1.5rem;
 
+    div.pagination{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     ul{
         list-style: none;
         display: flex;
@@ -13,7 +19,7 @@ export const TransactionsContainer = styled.main`
         align-items: center;
         gap: 0.5rem;
         margin-top: 2rem;
-        margin-bottom: 5rem;
+       
         li{
             display: flex;
             justify-content: center;
