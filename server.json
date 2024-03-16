@@ -2,403 +2,409 @@
     "transactions": [
         {
             "id": 1,
-            "createdAt": "2019-01-01T15:30:005Z",
-            "amount": 100,
+            "createdAt": "2024-03-15T16:55:32-0300",
+            "amount": 100.55,
             "type": "withdraw",
             "category": "Deposit",
             "title": "Initial deposit"
         },
         {
             "id": 2,
-            "createdAt": "2019-01-02T15:30:005Z",
-            "amount": 50,
+            "createdAt": "2024-03-16T10:30:15-0300",
+            "amount": 50.25,
             "type": "deposit",
             "category": "Salary",
-            "title": "ATM withdrawal"
+            "title": "Monthly salary"
         },
         {
             "id": 3,
-            "createdAt": "2019-01-03T15:30:005Z",
-            "amount": 25,
-            "type": "deposit",
-            "category": "Investiment",
-            "title": "FIIS"
+            "createdAt": "2024-03-17T14:20:45-0300",
+            "amount": 20.75,
+            "type": "withdraw",
+            "category": "Food",
+            "title": "Lunch"
         },
         {
             "id": 4,
-            "createdAt": "2019-01-04T15:30:005Z",
-            "amount": 75,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Groceries"
+            "createdAt": "2024-03-18T09:10:30-0300",
+            "amount": 200.0,
+            "type": "deposit",
+            "category": "Bonus",
+            "title": "Year-end bonus"
         },
         {
             "id": 5,
-            "createdAt": "2019-01-05T15:30:005Z",
-            "amount": 200,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Bonus"
+            "createdAt": "2024-03-19T16:45:00-0300",
+            "amount": 150.0,
+            "type": "withdraw",
+            "category": "Shopping",
+            "title": "New clothes"
         },
         {
             "id": 6,
-            "createdAt": "2019-01-06T15:30:005Z",
-            "amount": 150,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Dinner"
+            "createdAt": "2024-03-20T11:55:20-0300",
+            "amount": 80.0,
+            "type": "deposit",
+            "category": "Gift",
+            "title": "Birthday gift"
         },
         {
             "id": 7,
-            "createdAt": "2019-01-07T15:30:005Z",
-            "amount": 300,
-            "type": "deposit",
-            "category": "Investment",
-            "title": "Stocks"
+            "createdAt": "2024-03-21T15:30:10-0300",
+            "amount": 30.5,
+            "type": "withdraw",
+            "category": "Transportation",
+            "title": "Bus fare"
         },
         {
             "id": 8,
-            "createdAt": "2019-01-08T15:30:005Z",
-            "amount": 50,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Coffee"
+            "createdAt": "2024-03-22T08:40:55-0300",
+            "amount": 120.0,
+            "type": "deposit",
+            "category": "Savings",
+            "title": "Monthly savings"
         },
         {
             "id": 9,
-            "createdAt": "2019-01-09T15:30:005Z",
-            "amount": 100,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Overtime"
+            "createdAt": "2024-03-23T17:20:30-0300",
+            "amount": 10.0,
+            "type": "withdraw",
+            "category": "Entertainment",
+            "title": "Movie ticket"
         },
         {
             "id": 10,
-            "createdAt": "2019-01-10T15:30:005Z",
-            "amount": 20,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Snacks"
+            "createdAt": "2024-03-24T12:15:00-0300",
+            "amount": 90.0,
+            "type": "deposit",
+            "category": "Extra income",
+            "title": "Freelance work"
         },
         {
             "id": 11,
-            "createdAt": "2019-01-11T15:30:005Z",
-            "amount": 150,
+            "createdAt": "2024-03-25T14:50:45-0300",
+            "amount": 25.0,
+            "type": "withdraw",
+            "category": "Food",
+            "title": "Dinner"
+        },
+        {
+            "id": 12,
+            "createdAt": "2024-03-26T09:05:30-0300",
+            "amount": 300.0,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Stock purchase"
+        },
+        {
+            "id": 13,
+            "createdAt": "2024-03-27T16:40:00-0300",
+            "amount": 200.0,
+            "type": "withdraw",
+            "category": "Shopping",
+            "title": "Electronics"
+        },
+        {
+            "id": 14,
+            "createdAt": "2024-03-28T11:50:20-0300",
+            "amount": 150.0,
+            "type": "deposit",
+            "category": "Gift",
+            "title": "Wedding gift"
+        },
+        {
+            "id": 15,
+            "createdAt": "2024-03-29T15:25:10-0300",
+            "amount": 50.0,
+            "type": "withdraw",
+            "category": "Transportation",
+            "title": "Taxi fare"
+        },
+        {
+            "id": 16,
+            "createdAt": "2024-03-30T08:35:55-0300",
+            "amount": 100.0,
+            "type": "deposit",
+            "category": "Savings",
+            "title": "Emergency fund"
+        },
+        {
+            "id": 17,
+            "createdAt": "2024-03-31T17:15:30-0300",
+            "amount": 15.0,
+            "type": "withdraw",
+            "category": "Entertainment",
+            "title": "Concert ticket"
+        },
+        {
+            "id": 18,
+            "createdAt": "2024-04-01T12:10:00-0300",
+            "amount": 80.0,
+            "type": "deposit",
+            "category": "Extra income",
+            "title": "Part-time job"
+        },
+        {
+            "id": 19,
+            "createdAt": "2024-04-02T14:45:45-0300",
+            "amount": 35.0,
+            "type": "withdraw",
+            "category": "Food",
+            "title": "Snacks"
+        },
+        {
+            "id": 20,
+            "createdAt": "2024-04-03T09:00:30-0300",
+            "amount": 250.0,
             "type": "deposit",
             "category": "Investment",
             "title": "Cryptocurrency"
         },
         {
-            "id": 12,
-            "createdAt": "2019-01-12T15:30:005Z",
-            "amount": 80,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Gas"
-        },
-        {
-            "id": 13,
-            "createdAt": "2019-01-13T15:30:005Z",
-            "amount": 200,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Bonus"
-        },
-        {
-            "id": 14,
-            "createdAt": "2019-01-14T15:30:005Z",
-            "amount": 100,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Movies"
-        },
-        {
-            "id": 15,
-            "createdAt": "2019-01-15T15:30:005Z",
-            "amount": 300,
-            "type": "deposit",
-            "category": "Investment",
-            "title": "Bonds"
-        },
-        {
-            "id": 16,
-            "createdAt": "2019-01-16T15:30:005Z",
-            "amount": 50,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Lunch"
-        },
-        {
-            "id": 17,
-            "createdAt": "2019-01-17T15:30:005Z",
-            "amount": 100,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Bonus"
-        },
-        {
-            "id": 18,
-            "createdAt": "2019-01-18T15:30:005Z",
-            "amount": 30,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Parking"
-        },
-        {
-            "id": 19,
-            "createdAt": "2019-01-19T15:30:005Z",
-            "amount": 150,
-            "type": "deposit",
-            "category": "Investment",
-            "title": "ETFs"
-        },
-        {
-            "id": 20,
-            "createdAt": "2019-01-20T15:30:005Z",
-            "amount": 50,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Coffee"
-        },
-        {
             "id": 21,
-            "createdAt": "2019-01-21T15:30:005Z",
-            "amount": 100,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Overtime"
+            "createdAt": "2024-04-04T16:35:00-0300",
+            "amount": 180.0,
+            "type": "withdraw",
+            "category": "Shopping",
+            "title": "Clothing"
         },
         {
             "id": 22,
-            "createdAt": "2019-01-22T15:30:005Z",
-            "amount": 20,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Snacks"
+            "createdAt": "2024-04-05T11:45:20-0300",
+            "amount": 120.0,
+            "type": "deposit",
+            "category": "Gift",
+            "title": "Anniversary gift"
         },
         {
             "id": 23,
-            "createdAt": "2019-01-23T15:30:005Z",
-            "amount": 150,
-            "type": "deposit",
-            "category": "Investment",
-            "title": "Stocks"
+            "createdAt": "2024-04-06T15:20:10-0300",
+            "amount": 25.5,
+            "type": "withdraw",
+            "category": "Transportation",
+            "title": "Train ticket"
         },
         {
             "id": 24,
-            "createdAt": "2019-01-24T15:30:005Z",
-            "amount": 80,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Gas"
+            "createdAt": "2024-04-07T08:30:55-0300",
+            "amount": 90.0,
+            "type": "deposit",
+            "category": "Savings",
+            "title": "Vacation fund"
         },
         {
             "id": 25,
-            "createdAt": "2019-01-25T15:30:005Z",
-            "amount": 200,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Bonus"
+            "createdAt": "2024-04-08T17:10:30-0300",
+            "amount": 5.0,
+            "type": "withdraw",
+            "category": "Entertainment",
+            "title": "Game"
         },
         {
             "id": 26,
-            "createdAt": "2019-01-26T15:30:005Z",
-            "amount": 100,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Movies"
+            "createdAt": "2024-04-09T12:05:00-0300",
+            "amount": 70.0,
+            "type": "deposit",
+            "category": "Extra income",
+            "title": "Side project"
         },
         {
             "id": 27,
-            "createdAt": "2019-01-27T15:30:005Z",
-            "amount": 300,
-            "type": "deposit",
-            "category": "Investment",
-            "title": "Bonds"
+            "createdAt": "2024-04-10T14:40:45-0300",
+            "amount": 15.0,
+            "type": "withdraw",
+            "category": "Food",
+            "title": "Breakfast"
         },
         {
             "id": 28,
-            "createdAt": "2019-01-28T15:30:005Z",
-            "amount": 50,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Lunch"
+            "createdAt": "2024-04-11T09:00:30-0300",
+            "amount": 150.0,
+            "type": "deposit",
+            "category": "Investment",
+            "title": "Stocks"
         },
         {
             "id": 29,
-            "createdAt": "2019-01-29T15:30:005Z",
-            "amount": 100,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Bonus"
+            "createdAt": "2024-04-12T16:35:00-0300",
+            "amount": 120.0,
+            "type": "withdraw",
+            "category": "Shopping",
+            "title": "Electronics"
         },
         {
             "id": 30,
-            "createdAt": "2019-01-30T15:30:005Z",
-            "amount": 30,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Parking"
+            "createdAt": "2024-04-13T11:45:20-0300",
+            "amount": 80.0,
+            "type": "deposit",
+            "category": "Gift",
+            "title": "Graduation gift"
         },
         {
             "id": 31,
-            "createdAt": "2019-01-31T15:30:005Z",
-            "amount": 150,
-            "type": "deposit",
-            "category": "Investment",
-            "title": "ETFs"
+            "createdAt": "2024-04-14T15:20:10-0300",
+            "amount": 30.5,
+            "type": "withdraw",
+            "category": "Transportation",
+            "title": "Uber"
         },
         {
             "id": 32,
-            "createdAt": "2019-02-01T15:30:005Z",
-            "amount": 50,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Coffee"
+            "createdAt": "2024-04-15T08:30:55-0300",
+            "amount": 100.0,
+            "type": "deposit",
+            "category": "Savings",
+            "title": "Retirement fund"
         },
         {
             "id": 33,
-            "createdAt": "2019-02-02T15:30:005Z",
-            "amount": 100,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Overtime"
+            "createdAt": "2024-04-16T17:10:30-0300",
+            "amount": 10.0,
+            "type": "withdraw",
+            "category": "Entertainment",
+            "title": "Concert ticket"
         },
         {
             "id": 34,
-            "createdAt": "2019-02-03T15:30:005Z",
-            "amount": 20,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Snacks"
+            "createdAt": "2024-04-17T12:05:00-0300",
+            "amount": 90.0,
+            "type": "deposit",
+            "category": "Extra income",
+            "title": "Freelance work"
         },
         {
             "id": 35,
-            "createdAt": "2019-02-04T15:30:005Z",
-            "amount": 150,
-            "type": "deposit",
-            "category": "Investment",
-            "title": "Stocks"
-        },
-        {
-            "id": 36,
-            "createdAt": "2019-02-05T15:30:005Z",
-            "amount": 80,
+            "createdAt": "2024-04-18T14:40:45-0300",
+            "amount": 25.0,
             "type": "withdraw",
-            "category": "Expense",
-            "title": "Gas"
-        },
-        {
-            "id": 37,
-            "createdAt": "2019-02-06T15:30:005Z",
-            "amount": 200,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Bonus"
-        },
-        {
-            "id": 38,
-            "createdAt": "2019-02-07T15:30:005Z",
-            "amount": 100,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Movies"
-        },
-        {
-            "id": 39,
-            "createdAt": "2019-02-08T15:30:005Z",
-            "amount": 300,
-            "type": "deposit",
-            "category": "Investment",
-            "title": "Bonds"
-        },
-        {
-            "id": 40,
-            "createdAt": "2019-02-09T15:30:005Z",
-            "amount": 50,
-            "type": "withdraw",
-            "category": "Expense",
+            "category": "Food",
             "title": "Lunch"
         },
         {
-            "id": 41,
-            "createdAt": "2019-02-10T15:30:005Z",
-            "amount": 100,
+            "id": 36,
+            "createdAt": "2024-04-19T09:00:30-0300",
+            "amount": 200.0,
             "type": "deposit",
-            "category": "Salary",
-            "title": "Bonus"
+            "category": "Investment",
+            "title": "Real estate"
+        },
+        {
+            "id": 37,
+            "createdAt": "2024-04-20T16:35:00-0300",
+            "amount": 150.0,
+            "type": "withdraw",
+            "category": "Shopping",
+            "title": "Clothing"
+        },
+        {
+            "id": 38,
+            "createdAt": "2024-04-21T11:45:20-0300",
+            "amount": 120.0,
+            "type": "deposit",
+            "category": "Gift",
+            "title": "Birthday gift"
+        },
+        {
+            "id": 39,
+            "createdAt": "2024-04-22T15:20:10-0300",
+            "amount": 50.5,
+            "type": "withdraw",
+            "category": "Transportation",
+            "title": "Bus fare"
+        },
+        {
+            "id": 40,
+            "createdAt": "2024-04-23T08:30:55-0300",
+            "amount": 120.0,
+            "type": "deposit",
+            "category": "Savings",
+            "title": "Monthly savings"
+        },
+        {
+            "id": 41,
+            "createdAt": "2024-04-24T17:10:30-0300",
+            "amount": 15.0,
+            "type": "withdraw",
+            "category": "Entertainment",
+            "title": "Movie ticket"
         },
         {
             "id": 42,
-            "createdAt": "2019-02-11T15:30:005Z",
-            "amount": 30,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Parking"
+            "createdAt": "2024-04-25T12:05:00-0300",
+            "amount": 80.0,
+            "type": "deposit",
+            "category": "Extra income",
+            "title": "Part-time job"
         },
         {
             "id": 43,
-            "createdAt": "2019-02-12T15:30:005Z",
-            "amount": 150,
-            "type": "deposit",
-            "category": "Investment",
-            "title": "ETFs"
-        },
-        {
-            "id": 44,
-            "createdAt": "2019-02-13T15:30:005Z",
-            "amount": 50,
+            "createdAt": "2024-04-26T14:40:45-0300",
+            "amount": 35.0,
             "type": "withdraw",
-            "category": "Expense",
-            "title": "Coffee"
-        },
-        {
-            "id": 45,
-            "createdAt": "2019-02-14T15:30:005Z",
-            "amount": 100,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Overtime"
-        },
-        {
-            "id": 46,
-            "createdAt": "2019-02-15T15:30:005Z",
-            "amount": 20,
-            "type": "withdraw",
-            "category": "Expense",
+            "category": "Food",
             "title": "Snacks"
         },
         {
-            "id": 47,
-            "createdAt": "2019-02-16T15:30:005Z",
-            "amount": 150,
+            "id": 44,
+            "createdAt": "2024-04-27T09:00:30-0300",
+            "amount": 250.0,
             "type": "deposit",
             "category": "Investment",
-            "title": "Stocks"
+            "title": "Cryptocurrency"
+        },
+        {
+            "id": 45,
+            "createdAt": "2024-04-28T16:35:00-0300",
+            "amount": 180.0,
+            "type": "withdraw",
+            "category": "Shopping",
+            "title": "Electronics"
+        },
+        {
+            "id": 46,
+            "createdAt": "2024-04-29T11:45:20-0300",
+            "amount": 120.0,
+            "type": "deposit",
+            "category": "Gift",
+            "title": "Wedding gift"
+        },
+        {
+            "id": 47,
+            "createdAt": "2024-04-30T15:20:10-0300",
+            "amount": 25.5,
+            "type": "withdraw",
+            "category": "Transportation",
+            "title": "Train ticket"
         },
         {
             "id": 48,
-            "createdAt": "2019-02-17T15:30:005Z",
-            "amount": 80,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Gas"
+            "createdAt": "2024-05-01T08:30:55-0300",
+            "amount": 90.0,
+            "type": "deposit",
+            "category": "Savings",
+            "title": "Vacation fund"
         },
         {
             "id": 49,
-            "createdAt": "2019-02-18T15:30:005Z",
-            "amount": 200,
-            "type": "deposit",
-            "category": "Salary",
-            "title": "Bonus"
+            "createdAt": "2024-05-02T17:10:30-0300",
+            "amount": 5.0,
+            "type": "withdraw",
+            "category": "Entertainment",
+            "title": "Game"
         },
         {
             "id": 50,
-            "createdAt": "2019-02-19T15:30:005Z",
-            "amount": 100,
-            "type": "withdraw",
-            "category": "Expense",
-            "title": "Movies"
+            "createdAt": "2024-05-03T12:05:00-0300",
+            "amount": 70.0,
+            "type": "deposit",
+            "category": "Extra income",
+            "title": "Side project"
         }
-    ]
+       
+    ],
+    "sumary": {
+        "deposit": 1500.0,
+        "withdraw": 1000.55
+    }
+    
 }
