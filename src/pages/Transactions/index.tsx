@@ -2,13 +2,12 @@ import React, { FormEvent, useContext, useState } from 'react'
 import Header from '../../components/Header'
 
 import { Trash } from 'lucide-react'
-import { Loading } from '../../components/Loading'
+import { confirmAlert } from 'react-confirm-alert'
+import { toast } from 'react-toastify'
 import { ClickEvent, Pagination } from '../../components/Pagination'
 import { Summary } from '../../components/Summary'
 import { TransactionContext } from '../../contexts/TransactionContext'
-import useTransactionsRepository, {
-  SumaryResponse,
-} from '../../repository/transactions'
+import useTransactionsRepository from '../../repository/transactions'
 import { formatCurrency } from '../../utils/currencyUtils'
 import { formatStringDate } from '../../utils/dataUtils'
 import { limitPerPage } from '../../utils/params'
@@ -20,29 +19,17 @@ import {
 } from './styles'
 
 const Transactions: React.FC = () => {
-  const { transactions, updateTransactions } = useContext(TransactionContext)
+  const { transactions, loadTransactions, sumary } =
+    useContext(TransactionContext)
   // const [items, setItems] = React.useState<Transaction[]>([])
   const [currentPage, setCurrentPage] = useState(1)
   const [offset, setOffset] = React.useState(1)
 
   const transactionsRepo = useTransactionsRepository()
   const [filter, setFilter] = React.useState('')
-  const [loading, setLoading] = React.useState(true)
 
   const fetchItems = async () => {
-    setLoading(true)
-    const res = transactionsRepo.getTransactions(currentPage, filter)
-    let resSumary = {} as SumaryResponse
-
-    res.then((response) => {
-      transactionsRepo
-        .getTransactionsSumary()
-        .then((resp) => (resSumary = resp))
-        .then(() => {
-          updateTransactions(response, resSumary)
-        })
-        .then(() => setLoading(false))
-    })
+    loadTransactions(currentPage, filter)
   }
 
   React.useEffect(() => {
@@ -55,9 +42,41 @@ const Transactions: React.FC = () => {
 
   const handleSearchSubmit = (e: FormEvent) => {
     e.preventDefault()
-    console.log('searching')
+
     setCurrentPage(1)
     fetchItems()
+  }
+
+  const handleDelete = (id: string) => {
+    confirmAlert({
+      title: 'Confirm to submit',
+      message: 'Are you sure to do this.',
+      buttons: [
+        {
+          label: 'Yes',
+          onClick: () => {
+            transactionsRepo.removeTransaction(id).then(() =>
+              transactionsRepo
+                .updateSumaryByTransaction(
+                  sumary,
+                  transactions.data.find((item) => item.id === id)!,
+                  'remove',
+                )
+                .then(() => {
+                  fetchItems()
+                  toast.success('Excluído com sucesso !', {
+                    position: 'top-right',
+                  })
+                }),
+            )
+          },
+        },
+        {
+          label: 'No',
+          onClick: () => {},
+        },
+      ],
+    })
   }
 
   const handleChangePage = (event: ClickEvent) => {
@@ -76,42 +95,39 @@ const Transactions: React.FC = () => {
           handleChangeFilter={handleChangeFilter}
           handleSearchSubmit={handleSearchSubmit}
         />
-        {loading ? (
-          <Loading />
-        ) : (
-          <TransactionsTable>
-            <thead>
-              <tr>
-                <th>Descrição</th>
-                <th>Valor</th>
-                <th>tipo</th>
-                <th>Data</th>
-                <th>Opções</th>
-              </tr>
-            </thead>
-            <tbody>
-              {transactions.data &&
-                transactions.data.map((item) => (
-                  <tr key={item.id}>
-                    <td width="50%">{item.title}</td>
-                    <td>
-                      <PriceHighlight variant={item.type}>
-                        {formatCurrency(item.amount, 'BRL')}
-                      </PriceHighlight>
-                    </td>
 
-                    <td>{item.category}</td>
-                    <td>{formatStringDate(item.createdAt)}</td>
-                    <td>
-                      <button type="button">
-                        <Trash size={24} color="red"></Trash>{' '}
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-            </tbody>
-          </TransactionsTable>
-        )}
+        <TransactionsTable>
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>tipo</th>
+              <th>Data</th>
+              <th>Opções</th>
+            </tr>
+          </thead>
+          <tbody>
+            {transactions.data &&
+              transactions.data.map((item) => (
+                <tr key={item.id}>
+                  <td width="50%">{item.title}</td>
+                  <td>
+                    <PriceHighlight variant={item.type}>
+                      {formatCurrency(item.amount, 'BRL')}
+                    </PriceHighlight>
+                  </td>
+
+                  <td>{item.category}</td>
+                  <td>{formatStringDate(item.createdAt)}</td>
+                  <td>
+                    <button type="button" onClick={() => handleDelete(item.id)}>
+                      <Trash size={24} color="red"></Trash>{' '}
+                    </button>
+                  </td>
+                </tr>
+              ))}
+          </tbody>
+        </TransactionsTable>
 
         <div className="pagination">
           <Pagination

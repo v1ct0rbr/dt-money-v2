@@ -4,7 +4,10 @@ import {
   TransactionReducer,
   TransactionState,
 } from '../reducers/TransactionReducer'
-import { SumaryResponse, TransactionResponse } from '../repository/transactions'
+import useTransactionsRepository, {
+  SumaryResponse,
+  TransactionResponse,
+} from '../repository/transactions'
 
 interface TransactionContextType {
   transactions: TransactionResponse
@@ -15,6 +18,7 @@ interface TransactionContextType {
     transactionResponse: TransactionResponse,
     sumary: SumaryResponse,
   ) => void
+  loadTransactions: (page: number, filter: string) => void
 }
 
 export const TransactionContext = createContext({} as TransactionContextType)
@@ -41,6 +45,15 @@ export function TransactionProvider({
     TransactionReducer,
     initialState,
   )
+  const { getTransactions, getTransactionsSumary } = useTransactionsRepository()
+
+  function loadTransactions(page: number, filter: string) {
+    getTransactions(page, filter).then((response) => {
+      getTransactionsSumary().then((sumary) => {
+        updateTransactions(response, sumary)
+      })
+    })
+  }
 
   function updateTransactions(
     transactionResponse: TransactionResponse,
@@ -60,6 +73,7 @@ export function TransactionProvider({
         currentPage: transactionState.currentPage,
         sumary: transactionState.sumary,
         updateTransactions,
+        loadTransactions,
       }}
     >
       {children}

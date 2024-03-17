@@ -1,7 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { RadioGroup, RadioGroupItem } from '@radix-ui/react-radio-group'
 
-import styled, { css, styled } from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Overlay = styled(Dialog.Overlay)`
   background-color: rgba(0, 0, 0, 0.5);
@@ -27,6 +27,7 @@ export const Content = styled(Dialog.Content)`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
     input {
       padding: 1rem;
       border: 0;
@@ -58,6 +59,12 @@ export const Content = styled(Dialog.Content)`
       }
     }
   }
+`
+
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 `
 
 export const SpanError = styled.span`

@@ -1,7 +1,7 @@
 import { format, parseISO } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 
-const pattern = 'd.M.yyyy'
+const pattern = 'dd/MM/yyyy'
 
 function stringToDate(dateString: string): Date {
   // Parse the ISO string to a Date object
@@ -19,4 +19,8 @@ export const formatStringDate = (date: string) => {
   const dateString = date
   const dateResult = stringToDate(dateString)
   return formatDate(dateResult)
+}
+
+export const convertDateToISOString = (date: Date) => {
+  return date.toISOString()
 }

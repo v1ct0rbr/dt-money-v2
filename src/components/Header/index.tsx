@@ -12,6 +12,12 @@ import {
 } from './styles'
 
 const Header: React.FC = () => {
+  const [open, setOpen] = React.useState(false)
+
+  const handleClose = () => {
+    setOpen(false)
+  }
+
   return (
     <HeaderContainer>
       <HeaderContent>
@@ -19,11 +25,11 @@ const Header: React.FC = () => {
           <HeaderLogoIcon src={logoImg} alt="dt money" />
           <HeaderLogoText>dt money</HeaderLogoText>
         </HeaderLogo>
-        <Dialog.Root>
+        <Dialog.Root open={open} onOpenChange={setOpen}>
           <Dialog.Trigger asChild>
             <NewTransactionButton>Nova Transação</NewTransactionButton>
           </Dialog.Trigger>
-          <NewTransactionModal />
+          <NewTransactionModal handleClose={handleClose} />
         </Dialog.Root>
       </HeaderContent>
     </HeaderContainer>

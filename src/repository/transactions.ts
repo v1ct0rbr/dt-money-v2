@@ -24,7 +24,7 @@ export default function useTransactionsRepository() {
     page: number,
     title = '',
   ): Promise<TransactionResponse> {
-    const resquestURL = `${transactionsUrl}?${title ? `title=${title}` : ''}&_page=${page}&_per_page=${limitPerPage}`
+    const resquestURL = `${transactionsUrl}?${title ? `title=${title}` : ''}&_page=${page}&_per_page=${limitPerPage}&_sort=-createdAt`
     console.log(resquestURL)
     const response = await fetch(resquestURL)
     return response.json()
@@ -41,7 +41,7 @@ export default function useTransactionsRepository() {
     return response.json()
   }
 
-  async function removeTransaction(transactionId: number) {
+  async function removeTransaction(transactionId: string) {
     const response = await fetch(`${transactionsUrl}/${transactionId}`, {
       method: 'DELETE',
     })
@@ -55,10 +55,43 @@ export default function useTransactionsRepository() {
     return result
   }
 
+  async function updateSumaryByTransaction(
+    currentSumary: SumaryResponse,
+    transactionAdded: Transaction,
+    mode: 'add' | 'remove',
+  ): Promise<SumaryResponse> {
+    console.log(transactionAdded)
+    const newDeposit =
+      currentSumary.deposit +
+      (transactionAdded.type === 'deposit' ? transactionAdded.amount : 0) *
+        (mode === 'add' ? 1 : -1)
+    const newWithDraw =
+      currentSumary.withdraw +
+      (transactionAdded.type === 'withdraw' ? transactionAdded.amount : 0) *
+        (mode === 'add' ? 1 : -1)
+    const sumary = {
+      deposit: newDeposit,
+      withdraw: newWithDraw,
+    } as SumaryResponse
+
+    console.log(sumary)
+    const response = await fetch(`${sumaryUrl}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(sumary),
+    })
+    const result = response.json()
+
+    return result
+  }
+
   return {
     getTransactions,
     createTransaction,
     removeTransaction,
     getTransactionsSumary,
+    updateSumaryByTransaction,
   }
 }

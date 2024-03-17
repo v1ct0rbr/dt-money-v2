@@ -1,7 +1,7 @@
 import { SumaryResponse, TransactionResponse } from '../repository/transactions'
 
 export type Transaction = {
-  id: number
+  id: string
   title: string
   amount: number
   type: 'deposit' | 'withdraw'
