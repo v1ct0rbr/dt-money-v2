@@ -49,8 +49,8 @@ const Transactions: React.FC = () => {
 
   const handleDelete = (id: string) => {
     confirmAlert({
-      title: 'Confirm to submit',
-      message: 'Are you sure to do this.',
+      title: 'Confirmar exclusão',
+      message: 'Deseja excluir esta transação?',
       buttons: [
         {
           label: 'Yes',

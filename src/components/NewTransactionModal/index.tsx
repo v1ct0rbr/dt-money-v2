@@ -9,8 +9,8 @@ import { Transaction } from '../../reducers/TransactionReducer'
 import useTransactionsRepository from '../../repository/transactions'
 import { convertDateToISOString } from '../../utils/dataUtils'
 
+import { useContext } from 'react'
 import { NumericFormat } from 'react-number-format'
-import { useContextSelector } from 'use-context-selector'
 import { convertStringToBRLCurrency } from '../../utils/currencyUtils'
 import {
   CloseButton,
@@ -48,16 +48,8 @@ interface NewTransactionModalProps {
 }
 
 export function NewTransactionModal({ handleClose }: NewTransactionModalProps) {
-  const { sumary, currentPage, loadTransactions } = useContextSelector(
-    TransactionContext,
-    (context) => {
-      return {
-        sumary: context.sumary,
-        currentPage: context.currentPage,
-        loadTransactions: context.loadTransactions,
-      }
-    },
-  )
+  const { sumary, currentPage, loadTransactions } =
+    useContext(TransactionContext)
 
   const { createTransaction, updateSumaryByTransaction } =
     useTransactionsRepository()
